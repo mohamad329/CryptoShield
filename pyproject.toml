@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptoshield"
+dynamic = ["version"]
+description = "Educational AES-256/XOR encryption and string-obfuscation toolkit (pure Python, zero dependencies)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["cryptography", "aes", "education", "obfuscation", "security", "defensive-security"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Education",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["crypto_engine*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "crypto_engine.__version__"}

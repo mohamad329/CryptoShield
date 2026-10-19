@@ -105,8 +105,8 @@ Pass `--no-banner` (and/or `--no-color`) **before** the subcommand to suppress t
 Zero third-party dependencies — only the Python 3.9+ standard library.
 
 ```bash
-git clone https://github.com/mohamad329/CryptoShield.git
-cd CryptoShield
+git clone https://github.com/mohamad329/Mo-Crypto.git
+cd Mo-Crypto
 python Main_Demo.py          # run the walkthrough immediately, no install needed
 ```
 
